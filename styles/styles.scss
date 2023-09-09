@@ -1,0 +1,22 @@
+@import "./variables";
+@import "./mixin";
+
+header {
+    background: $backgroundColor;
+    font-family: $mainFont;
+
+    img {
+        padding: 50px 20px;
+    }
+
+    div{
+        span {
+            margin: 1rem;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+
+    }
+}

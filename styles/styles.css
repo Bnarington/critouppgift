@@ -1,0 +1,13 @@
+header {
+  background: #F0EFE9;
+  font-family: "DM Sans", sans-serif;
+}
+header img {
+  padding: 50px 20px;
+}
+header div span {
+  margin: 1rem;
+}
+header div i {
+  margin-right: 5px;
+}
