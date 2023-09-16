@@ -10,11 +10,6 @@ html, body {
     font-family: $mainFont;
     font-size: 16px;
     font-weight: 400;
-    
-    h1, h2, h3, h4, h5, h6 {
-        font-family: $headFont;
-    }
-
 }
 
 header{
@@ -48,17 +43,22 @@ header{
 
         .top-menu{
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             border-bottom: 1px solid $lineColour;
             padding-bottom: 10px;
 
-
+            @media(min-width: 1200px){
+                justify-content: space-between;
+            }
 
             .contact-info{
-                display: flex;
+                display: none;
                 align-items: center;
 
+                @media(min-width: 1200px){
+                    display: flex;
+                }
 
                 .content-box{
                     padding-right: 25px;
@@ -79,6 +79,7 @@ header{
             }
 
             .socialmedia{
+
 
                 a{
                     color:#191919;
@@ -122,6 +123,11 @@ header{
                     }
                 }
             }
+
+            .btn-login{
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
         }
     }
 
@@ -146,8 +152,96 @@ header{
 
     &:hover{
         background-color: $colourPrimary;
-        border: 1px solid $buttonColour;
+        border: 1px solid $colourPrimary;
         color: $backgroundColour;
         text-decoration: underline;
+    }
+}
+
+.btn-transparent{
+    font-family: $mainFont;
+    background-color: transparent;
+    border: 1px solid $colourPrimary;
+    color: $colourPrimary;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: 600;
+    border-radius: 25px;
+    font-size: 16px;
+
+    i{
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover{
+        background-color: $colourPrimary;
+        border: 1px solid $colourPrimary;
+        color: $backgroundColour;
+        text-decoration: underline;
+    }
+}
+
+.showcase{
+    background-color: $backgroundColour;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .content{
+            
+            padding-top: 80px;
+            padding-bottom: 80px;
+            text-align: center;
+
+            h1{
+                font-family: $headFont;
+                font-weight: 700;
+                font-size: 45px;
+
+                @media (min-width: 768px){
+                    font-size: 70px;
+                }
+
+                @media (min-width: 1400px){
+                    font-size: 85px;
+                }
+            }
+
+            p{
+
+                font-size: 14px;
+                padding-top: 35px;
+                padding-bottom: 50px;
+
+                @media (min-width: 768px){
+                    font-size: 20px;
+                }
+
+
+            }
+
+            a{
+                display: block;
+                margin-bottom: 20px;
+                margin-right: 0px;
+                
+                @media (min-width: 768px){
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+
+        }
+
+        img{
+            display: none;
+            margin-right: -50px;
+
+            @media (min-width: 1200px){
+                display:block;
+            }
+        }
     }
 }
