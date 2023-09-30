@@ -11,60 +11,187 @@
 
 
 <body>
+
+    <div class="wrapper-grid">
         <!--Top of the site, navbar + infoboxes-->
-    <header>
-        <div class="container">
-            <a class="navbar-brand" href="./index.html">
-            <img src="images/logotype.svg" alt="Crito Logotype">
-            </a>
-            <button class="menu-bars"><i class=" fa-solid fa-bars-staggered"></i></button>
-                <div class="menu">
-                    <div class="top-menu">
-                        <div class="contact-info">
-                            <div class="content-box"><i class="fa-light fa-envelope-dot pe-2"></i>info@crito.com</div>
-                            <div class="content-box"><i class="fa-light fa-phone-volume pe-2"></i>+46 (8) 121 470 50</div>
-                            <div class="content-box last"><i class="fa-regular fa-location-dot pe-2"></i>Sveavägen 31, 111 34 STOCKHOLM</div>
+        <header>
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                <img src="images/logotype.svg" alt="Crito Logotype">
+                </a>
+                <button class="menu-bars"><i class=" fa-solid fa-bars-staggered"></i></button>
+                    <div class="menu">
+                        <div class="top-menu">
+                            <div class="contact-info">
+                                <div class="content-box"><i class="fa-light fa-envelope-dot pe-2"></i>info@crito.com</div>
+                                <div class="content-box"><i class="fa-light fa-phone-volume pe-2"></i>+46 (8) 121 470 50</div>
+                                <div class="content-box last"><i class="fa-regular fa-location-dot pe-2"></i>Sveavägen 31, 111 34 STOCKHOLM</div>
+                            </div>
+                            <div class="socialmedia">
+                                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook pe-2"></i></a>
+                                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter pe-2"></i></a>
+                                <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram pe-2"></i></a>
+                                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+
                         </div>
-                        <div class="socialmedia">
-                            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook pe-2"></i></a>
-                            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter pe-2"></i></a>
-                            <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram pe-2"></i></a>
-                            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+                        <div class="mainmenu pt-2">
+                            <nav>
+                                <a class="active" href="index.html">Home</a>
+                                <a href="services.html">Services</a>
+                                <a href="news.html">News</a>
+                                <a href="contact.html">Contact</a>
+                            </nav>
+                            <a class="btn-ylw btn-login" href="login.html">Login<i class="fa-regular fa-arrow-up-right"></i></a>
                         </div>
 
                     </div>
+                </div>
+        </header>
 
-                    <div class="mainmenu pt-2">
-                        <nav>
-                            <a class="active" href="home.html">Home</a>
-                            <a href="services.html">Services</a>
-                            <a href="news.html">News</a>
-                            <a href="contact.html">Contact</a>
-                        </nav>
-                        <a class="btn-ylw btn-login" href="login.html">Login<i class="fa-regular fa-arrow-up-right"></i></a>
+            <!--Showcase section-->
+        <section class="showcase">
+            <div class="container"> 
+                <div class="content">            
+                    <h1>We Provide The Best Business Solutions</h1>
+                    <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
+                    <a class="btn-ylw" href="consulting.html">Get Consulting <i class="fa-regular fa-arrow-up-right"></i> </a>
+                    <a class="btn-transparent" href="services.html">Learn more <i class="fa-regular fa-arrow-up-right"></i></a>
+                </div>
+                <img src="images/Image.svg" alt="A man in a suit looking down to the right on a tablet, looking confounded.">
+
+            <!-- </div>
+
+            <div><img src="images/background-lines.svg" alt="background lines">
+            </div> -->
+        </section>
+            <!--Section with company logos.  -->
+        <section class="company-logos">
+            <div class="container">
+                <a href="#"><img src="images/paperz.svg" alt="logotype for paperz"></a>
+                <a href="#"><img src="images/dorfus.svg" alt="logotype for dorfus"></a>
+                <a href="#"><img src="images/martino.svg" alt="logotype for martino"></a>
+                <a href="#"><img src="images/square.svg" alt="logotype for square"></a>
+                <a href="#"><img src="images/gobona.svg" alt="logotype for gobona"></a>
+            </div>
+
+        </section>
+
+            <!-- Features box  -->
+        <section class="container features-box">
+            <div class="container features-box-child">
+                <div class="features-child-grid section-title">
+                    <p>Features</p>
+                    <h2>Our Accounting Is Trusted By Thousands Of Companies</h2>
+                </div>
+                <div class="features-child-grid"><button class="btn-ylw">Learn More<i class="fa-regular fa-arrow-up-right"></i></button></div>
+
+            </div>
+            <div class="container features-grid-parent">
+                <div class="features-grid-child"><i class="fa-regular fa-handshake"></i><br><span class="span1">Business Advice</span><br><span class="span2">Lorem ipsum dolor sit amet <br> consectetur, adipisicing elit.</span> </div>
+                <div class="features-grid-child"><i class="fa-light fa-lightbulb-dollar"></i><br><span class="span1">Startup Business</span><br><span class="span2">Lorem ipsum dolor sit amet <br> consectetur, adipisicing elit.</span> </div>
+                <div class="features-grid-child"><i class="fa-solid fa-chart-mixed-up-circle-dollar"></i><br><span class="span1">Financial Advice</span><br><span class="span2">Lorem ipsum dolor sit amet <br> consectetur, adipisicing elit.</span></div>
+                <div class="features-grid-child"><i class="fa-light fa-gear-complex"></i><br><span class="span1">Risk Management</span><br><span class="span2">Lorem ipsum dolor sit amet <br> consectetur, adipisicing elit.</span></div>
+            </div>
+        </section>
+            <!-- Founders box with intro video.  -->
+        <section  class="founder-box">
+            <div class="blue-box-parent container">
+                <img class="happy-woman-img" src="images\Image-13.jpg" alt="Picture of a woman walking with laptop in an office enviroment, she looks happy.">
+                <div class="blue-box"> <span class="span-name">Samantha Brown, <span class="span-orange">Founder</span></span><br><br><span class="span-lorem">"Lorem ipsum dolor sit, amet consectetur adipisicing elit."</span></div>
+
+                <div class="about-company-box">
+                    <div class="section-title">
+                        <p>About Comapny</p>
+                        <h2>We Are Business Consulting & Credit Repair Experts</h2>
                     </div>
+
+                    <div class="about-company-lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos. </div>
+                    <div class="about-company-lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis quas assumenda esse obcaecati? Ex esse error voluptates iure vel totam eos. </div>
+                    <button class="btn-ylw">Learn More<i class="fa-regular fa-arrow-up-right"></i></button>
+                    <button class="btn-intro"><span><i class="fa-sharp fa-solid fa-play"></i></span>Intro Video</button>
+                </div>
+            </div>
+           
+        </section>
+            <!-- Sevices box Not complete -->
+        <section class="services-box">
+            <div class="container">
+                <div class="section-title">
+                    <p>Our services</p>
+                <h2>We Provide The best <br>Service For Consulting</h2>
+                </div>
+
+            <div class="consulting-grid-parent">
+                <div class="whitebox">
+                    <div class="consulting-grid">
+                        <h3>Business Advice</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ducimus laudantium nihil neque.</p>
+                        <button class="btn-intro"><i class="fa-light fa-arrow-right"></i></i></span></button>
+                    </div>
+                </div>
+                <div class="whitebox">
+                    <div class="consulting-grid">
+                        <h3>Startup Business</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ducimus laudantium nihil neque.</p>
+                        <button class="btn-intro"><span><i class="fa-light fa-arrow-right"></i></i></span></button>
+                    </div>
+                </div>
+                <div class="whitebox">
+                    <div class="consulting-grid">
+                        <h3>Financial Advice</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ducimus laudantium nihil neque.</p>
+                        <button class="btn-intro"><i class="fa-light fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="whitebox">
+                    <div class="consulting-grid">
+                        <h3>Risk Management</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ducimus laudantium nihil neque.</p>
+                        <button class="btn-intro"><span><i class="fa-light fa-arrow-right"></i></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container container-extra">
+                <button class="btn-transparent">Browse More<i class="fa-regular fa-arrow-up-right"></i></button>
+            </div>
+        </section>
+            <!-- project n case section -->
+        <section class="project-case-section">
+            <div class="container">
+                <div class="section-title">
+                    <p>Projects and Case studies</p>
+                    <h2>Let's Look At Our Global Projects</h2>
+                </div>
+
+                <div class="project-cases-grid">
+                    <article>
+                        <img src="images\Image-8.jpg" alt="Newspaper">
+                        <h3>Grow your buisness</h3>
+                        <a href="#">Read More <i class="fa-regular fa-arrow-up-right"></i> </a>
+                    </article>
+                    <article>
+                        <img src="images\Image-10.jpg" alt="Pink iPad and Apple watch">
+                        <h3>Why your client needs a responsive website</h3>
+                        <a href="#">Read More <i class="fa-regular fa-arrow-up-right"></i> </a>
+                    </article>
+                    <article>
+                        <img src="images\Image-9.jpg" alt="Office supplies">
+                        <h3>Educate your employees to get better results</h3>
+                        <a href="#">Read More <i class="fa-regular fa-arrow-up-right"></i> </a>
+                    </article>
+                    <article>
+                        <img src="images\Image-11.jpg" alt="Laptop with buisness infographics.">
+                        <h3>Buisness insights is a important piece of your business</h3>
+                        <a href="#">Read More <i class="fa-regular fa-arrow-up-right"></i> </a>
+                    </article>
 
                 </div>
             </div>
-    </header>
+        </section>
 
-        <!--Showcase section-->
-    <section class="showcase">
-        <div class="container"> 
-            <div class="content">            
-                <h1>We Provide The Best Business Solutions</h1>
-                <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
-                <a class="btn-ylw" href="consulting.html">Get Consulting <i class="fa-regular fa-arrow-up-right"></i> </a>
-                <a class="btn-transparent" href="services.html">Learn more <i class="fa-regular fa-arrow-up-right"></i></a>
-            </div>
-            <img src="images/Image.svg" alt="A man in a suit looking down to the right on a tablet, looking confounded.">
-
-        <!-- </div>
-
-        <div><img src="images/background-lines.svg" alt="background lines">
-        </div> -->
-    </section>
-
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
 </body>

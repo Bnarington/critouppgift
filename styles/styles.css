@@ -7,39 +7,46 @@ html, body {
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
+}
+
+.wrapper-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
 header {
   background-color: #F0EFE9;
   padding: 16px;
 }
-
-.container {
+header .container {
   display: flex;
   gap: 70px;
   align-items: center;
   justify-content: space-between;
 }
-.container .menu-bars {
+header .container .menu-bars {
   font-size: 25px;
   border: none;
   background-color: transparent;
 }
 @media (min-width: 992px) {
-  .container .menu-bars {
+  header .container .menu-bars {
     display: none;
   }
 }
-.container .menu {
+header .menu {
   display: none;
   flex: 1;
 }
 @media (min-width: 992px) {
-  .container .menu {
+  header .menu {
     display: block;
   }
 }
-.container .menu .top-menu {
+header .menu .top-menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -47,20 +54,20 @@ header {
   padding-bottom: 10px;
 }
 @media (min-width: 1200px) {
-  .container .menu .top-menu {
+  header .menu .top-menu {
     justify-content: space-between;
   }
 }
-.container .menu .top-menu .contact-info {
+header .menu .top-menu .contact-info {
   display: none;
   align-items: center;
 }
 @media (min-width: 1200px) {
-  .container .menu .top-menu .contact-info {
+  header .menu .top-menu .contact-info {
     display: flex;
   }
 }
-.container .menu .top-menu .contact-info .content-box {
+header .menu .top-menu .contact-info .content-box {
   padding-right: 25px;
   margin-right: 30px;
   border-right: 1px solid #dad9d3;
@@ -68,32 +75,32 @@ header {
   font-size: 15px;
   font-weight: 300;
 }
-.container .menu .top-menu .contact-info .content-box i {
+header .menu .top-menu .contact-info .content-box i {
   font-size: 1.2em;
 }
-.container .menu .top-menu .contact-info .content-box.last {
+header .menu .top-menu .contact-info .content-box.last {
   border: none;
 }
-.container .menu .top-menu .socialmedia a {
+header .menu .top-menu .socialmedia a {
   color: #191919;
   font-size: 1.2em;
 }
-.container .menu .top-menu .socialmedia a:hover {
+header .menu .top-menu .socialmedia a:hover {
   color: #908c8c;
 }
-.container .menu .mainmenu {
+header .menu .mainmenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.container .menu .mainmenu nav a {
+header .menu .mainmenu nav a {
   display: inline-block;
   color: #191919;
   text-decoration: none;
   margin-right: 30px;
   position: relative;
 }
-.container .menu .mainmenu nav a.active::after, .container .menu .mainmenu nav a:hover::after {
+header .menu .mainmenu nav a.active::after, header .menu .mainmenu nav a:hover::after {
   content: "";
   position: absolute;
   font-weight: 500;
@@ -104,7 +111,7 @@ header {
   bottom: -3px;
   transform: translate(calc(50% - 15px));
 }
-.container .menu .mainmenu .btn-login {
+header .menu .mainmenu .btn-login {
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -151,6 +158,23 @@ header {
   border: 1px solid #191919;
   color: #F0EFE9;
   text-decoration: underline;
+}
+
+.section-title {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+.section-title p {
+  color: #F94D1C;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 18px;
+  font-weight: 500;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .showcase {
@@ -210,4 +234,260 @@ header {
   .showcase .container img {
     display: block;
   }
+}
+
+.company-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.company-logos .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+.company-logos .container a {
+  margin-right: 0px;
+}
+.company-logos .container a img {
+  display: none;
+  margin-right: 0px;
+}
+@media (min-width: 1200px) {
+  .company-logos .container a img {
+    display: block;
+  }
+}
+
+.features-box {
+  border: 1px solid rgba(187, 181, 181, 0.5019607843);
+  padding: 120px;
+  display: none;
+  margin-bottom: 100px;
+}
+.features-box .section-title {
+  padding-top: 0px;
+}
+@media (min-width: 1200px) {
+  .features-box {
+    display: flex;
+    max-width: 1520px;
+  }
+  .features-box .container {
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.features-box .features-box-child {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr 1fr);
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 10px;
+  padding-right: 70px;
+}
+.features-box .features-grid-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.features-box .features-grid-parent i {
+  font-size: 25px;
+  padding-bottom: 20px;
+  color: #191919;
+}
+.features-box .features-grid-parent .span1 {
+  font-weight: 700;
+  color: #191919;
+  padding-bottom: 10px;
+}
+.features-box .features-grid-parent .span2 {
+  color: #84848a;
+}
+
+.founder-box {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.founder-box .blue-box-parent {
+  display: none;
+  position: relative;
+  width: 1320px;
+  height: 615px;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .founder-box .blue-box-parent {
+    display: flex;
+  }
+}
+.founder-box .blue-box-parent img {
+  height: 615px;
+  width: auto;
+}
+.founder-box .blue-box-parent .blue-box {
+  width: 368px;
+  height: 180px;
+  padding: 20px;
+  background-color: #BEEBFF;
+  border: #BEEBFF solid 2px;
+  position: absolute;
+  bottom: 15px;
+  left: 8px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  color: #191919;
+}
+.founder-box .blue-box-parent .blue-box .span-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.founder-box .blue-box-parent .blue-box .span-orange {
+  color: #F94D1C;
+  font-size: 16px;
+  font-weight: 500;
+}
+.founder-box .blue-box-parent .about-company-box {
+  width: 532px;
+  height: 589px;
+  margin-left: 150px;
+}
+.founder-box .blue-box-parent .about-company-box .section-title {
+  padding-top: 70px;
+  padding-bottom: 0px;
+}
+.founder-box .blue-box-parent .about-company-box .about-company-lorem1 {
+  opacity: 0.7;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.founder-box .blue-box-parent .about-company-box .about-company-lorem2 {
+  opacity: 0.7;
+  padding-bottom: 30px;
+}
+.founder-box .blue-box-parent .about-company-box .btn-intro {
+  background-color: white;
+  border: none;
+  text-align: center;
+  color: #191919;
+  text-decoration: none;
+}
+.founder-box .blue-box-parent .about-company-box .btn-intro span {
+  margin-right: 10px;
+  margin-left: 25px;
+  padding: 0px;
+  border-radius: 50%;
+}
+.founder-box .blue-box-parent .about-company-box .btn-intro span i {
+  padding: 1rem;
+  border: 1px solid #191919;
+  border-radius: 50%;
+}
+.founder-box .blue-box-parent .about-company-box .btn-intro span i:hover {
+  background-color: #191919;
+  border: #191919 solid 2px;
+  color: white;
+}
+
+.services-box {
+  background-color: #F0EFE9;
+  height: 870px;
+  width: 100%;
+}
+.services-box .section-title {
+  padding-top: 50px;
+}
+.services-box .container-extra {
+  padding-top: 50px;
+  text-align: center;
+}
+.services-box .consulting-grid-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.services-box .consulting-grid-parent .whitebox {
+  display: flex;
+  background-color: white;
+  width: 308px;
+  height: 333px;
+  justify-content: center;
+  align-items: center;
+}
+.services-box .consulting-grid-parent .whitebox:hover {
+  background-color: #F9D783;
+}
+.services-box .consulting-grid-parent .consulting-grid {
+  padding: 25px;
+}
+.services-box .consulting-grid-parent .consulting-grid h3 {
+  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 22px;
+  font-weight: 700;
+}
+.services-box .consulting-grid-parent .consulting-grid p {
+  color: #191919;
+  opacity: 0.7;
+  font-weight: 400;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.services-box .consulting-grid-parent .consulting-grid .btn-intro {
+  border: none;
+  text-align: center;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  float: right;
+  font-weight: 700;
+  padding: 0px;
+  border: 1px solid #191919;
+  border-radius: 50%;
+}
+.services-box .consulting-grid-parent .consulting-grid .btn-intro i {
+  padding: 1rem;
+  border: 1px solid #191919;
+  border-radius: 50%;
+}
+
+.project-case-section .container .section-title {
+  text-align: center;
+}
+.project-case-section .container .project-cases-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 1200px) {
+  .project-case-section .container .project-cases-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.project-case-section .container .project-cases-grid article img {
+  width: 100%;
+}
+.project-case-section .container .project-cases-grid article h3 {
+  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DAD9D3;
+}
+.project-case-section .container .project-cases-grid article a {
+  margin-right: 15px;
+  margin-top: 15px;
+  display: block;
+  text-align: right;
+  color: #191919;
+}
+.project-case-section .container .project-cases-grid article a:hover {
+  color: #F94D1C;
+}
+.project-case-section .container .project-cases-grid article a i {
+  margin-left: 3px;
 }
