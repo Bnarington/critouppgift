@@ -39,7 +39,6 @@ header{
                 display: none;
             }
         }
-    
     }
 
 
@@ -99,9 +98,7 @@ header{
                     }
                 }
                 
-            }
-
-                
+            }               
         }
 
         .mainmenu{
@@ -110,6 +107,7 @@ header{
             align-items: center;
 
             nav{
+
                 a{
                     display: inline-block;
                     color: $colourPrimary;
@@ -139,8 +137,6 @@ header{
             }
         }
     }
-
-
 }
 
 .btn-ylw{
@@ -260,7 +256,6 @@ header{
                     margin-right: 10px;
                 }
             }
-
         }
 
         img{
@@ -354,7 +349,6 @@ header{
             color: $colourSecondary;
         }
     }
-
 }   
 
 .founder-box{
@@ -407,7 +401,6 @@ header{
             .span-lorem{
 
             }
-
         }
     
         .about-company-box{
@@ -581,8 +574,7 @@ header{
                     i{
                         margin-left: 3px;
                     }
-                }
-                
+                }                
             }
         }
     }
