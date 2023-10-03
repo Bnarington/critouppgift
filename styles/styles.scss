@@ -187,6 +187,30 @@ header{
     }
 }
 
+.btn-blk{
+    font-family: $mainFont;
+    background-color: #191919;
+    border: 1px solid $colourPrimary;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: 600;
+    border-radius: 25px;
+    font-size: 16px;
+
+    i{
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover{
+        background-color: white;
+        border: 1px solid $colourPrimary;
+        color: #191919;
+        text-decoration: underline;
+    }
+}
+
 .section-title{
     padding-top: 120px;
     padding-bottom: 90px;
@@ -530,9 +554,85 @@ header{
     }
 }
 
+.why-us{
+    position: relative;
+    
+    .picture-left{
+        
+        img{
+            position: absolute;
+            left: 60%;
+            bottom: 12%;
+        }
+
+        .box{
+            width: 55%;
+            height: 60%;
+            position: absolute;
+            background-color: $backgroundColour;
+            left: 55%;
+            top: 36%;
+        }
+    }
+
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+
+        .why-us-box{
+            .container-extra{
+                .reasons-box{
+                    display: flex;
+                    margin-bottom: 10px;
+                    background-color: white;
+
+                    .icon{
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        i{
+                            margin-right: 10px;
+                            font-size: 18px;
+                            border: 1px solid #908c8c6b;
+                            border-radius: 50%;
+                            padding: 10px;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                    }
+
+                    .text{
+
+                        h4{
+                            font-family: $headFont;
+                            font-weight: 700;
+                            font-size: 22px;
+                        }
+
+                        p{
+                            font-family: $mainFont;
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #19191966;
+                        }
+
+                    }
+                        
+                }
+            }
+        }
+    }        
+}
+           
 .project-case-section{
     .container{
 
+        .btn-blk{
+            margin-top: 25px;
+        }
         .section-title{
             text-align: center;
         }
@@ -575,6 +675,98 @@ header{
                         margin-left: 3px;
                     }
                 }                
+            }
+        }
+    }
+}
+
+.team-background{
+    background-color: #F9D783;
+    height: 1964px;
+    margin-top: 75px;
+    position: relative;
+
+    .btn-blk-extra{
+        position: absolute;
+        left: 70%;
+        top: 8.5%;
+    }
+
+    .member-pictures{
+        padding-bottom: 120px;
+        .container-extra{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        }
+
+        .container-extra-extra{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding-top: 10px;
+
+            .info-txt{
+
+                h4{
+                    color: #191919;
+                    font-family: $headFont;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+
+                p{
+                    color:#191919b1;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .dots{
+            display: block;
+            margin: auto;
+            padding-top: 10px;
+        }
+    }
+
+    .testimonial-box{
+        background-color: white;
+        width: 75%;
+        height: 887px;
+        margin: auto;
+        .section-title{
+            text-align: center;
+        }
+
+        .testimonials{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .test-content{
+                width: 420px;
+                padding-bottom: 25px;
+                .stars{
+                    padding-bottom: 25px;
+                }
+
+                .nameandpic{
+                    display: flex;
+
+                    .text{
+                        padding-left: 15px;
+
+                        h4{
+                            font-family: $headFont;
+                            font-size: 22px;
+                            font-weight: 700;
+                        }
+
+                        p{
+                            color: #F94D1C;
+                        }
+                    }
+
+                }
+
             }
         }
     }
