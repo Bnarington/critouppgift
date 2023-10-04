@@ -641,3 +641,71 @@ header .menu .mainmenu .btn-login {
 .team-background .testimonial-box .testimonials .test-content .nameandpic .text p {
   color: #F94D1C;
 }
+
+.news-section {
+  position: relative;
+}
+.news-section .btn-transparent {
+  position: absolute;
+  left: 65%;
+  top: 21%;
+}
+.news-section .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 120px;
+}
+.news-section .news-boxes .pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.news-section .news-boxes .text {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.news-section .news-boxes .text .text-box h4 {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  font-weight: 400;
+  color: #6A6C71;
+  padding-top: 15px;
+}
+.news-section .news-boxes .text .text-box h3 {
+  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: #191919;
+  padding-top: 15px;
+}
+.news-section .news-boxes .text .text-box p {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(25, 25, 25, 0.6941176471);
+  padding-top: 15px;
+}
+
+.newsletter {
+  background-color: #F0EFE9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+}
+.newsletter .form label {
+  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 45px;
+  font-weight: 700;
+  padding-right: 50px;
+}
+.newsletter .form input {
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin-right: 20px;
+}

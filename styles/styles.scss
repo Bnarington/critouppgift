@@ -421,10 +421,6 @@ header{
                 font-size: 16px;
                 font-weight: 500;
             }
-
-            .span-lorem{
-
-            }
         }
     
         .about-company-box{
@@ -768,6 +764,95 @@ header{
                 }
 
             }
+        }
+    }
+}
+
+.news-section{
+    position: relative;
+
+    .btn-transparent{
+        position: absolute;
+        left: 65%;
+        top: 21%;
+        
+    }
+
+    .dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 35px;
+        padding-bottom: 120px;
+    }
+
+    .news-boxes{
+
+        .pictures{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+
+        .text{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            .text-box{
+
+                h4{
+                    font-family: $mainFont;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color:#6A6C71;
+                    padding-top: 15px;
+                }
+
+                h3{
+                    font-family: $headFont;
+                    font-size: 22px;
+                    font-weight: 700;
+                    color:#191919;
+                    padding-top: 15px;
+                }
+
+                p{
+                    font-family: $mainFont;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color:#191919b1;
+                    padding-top: 15px;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.newsletter{
+    background-color: $backgroundColour;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:270px;
+
+    .form{
+
+        label{
+            font-family: $headFont;
+            font-size: 45px;
+            font-weight: 700;
+            padding-right: 50px;
+        }
+    
+        input{
+            border-radius:30px ;
+            outline: none;
+            border: none;
+            padding: 10px;
+            margin-right: 20px;
         }
     }
 }
