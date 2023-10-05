@@ -88,6 +88,20 @@ header .menu .top-menu .socialmedia a {
 header .menu .top-menu .socialmedia a:hover {
   color: #908c8c;
 }
+header .menu .top-menu .socialmedia a i:hover {
+  animation: flash 1300ms infinite;
+}
+@keyframes flash {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 header .menu .mainmenu {
   display: flex;
   justify-content: space-between;
@@ -126,6 +140,9 @@ header .menu .mainmenu .btn-login {
   font-weight: 600;
   border-radius: 25px;
   font-size: 16px;
+  transition: background-color 0.3s ease-in-out, border 0.2s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out, border 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out, border 0.2s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
 }
 .btn-ylw i {
   margin-left: 8px;
@@ -148,6 +165,9 @@ header .menu .mainmenu .btn-login {
   font-weight: 600;
   border-radius: 25px;
   font-size: 16px;
+  transition: background-color 0.3s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
 }
 .btn-transparent i {
   margin-left: 8px;
@@ -170,6 +190,9 @@ header .menu .mainmenu .btn-login {
   font-weight: 600;
   border-radius: 25px;
   font-size: 16px;
+  transition: background-color 0.3s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
 }
 .btn-blk i {
   margin-left: 8px;
@@ -258,6 +281,83 @@ header .menu .mainmenu .btn-login {
   }
 }
 
+.showcase-contacts {
+  background-color: #F0EFE9;
+}
+.showcase-contacts .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.showcase-contacts .container .content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.showcase-contacts .container .content h1 {
+  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 700;
+  font-size: 45px;
+}
+@media (min-width: 768px) {
+  .showcase-contacts .container .content h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .showcase-contacts .container .content h1 {
+    font-size: 85px;
+  }
+}
+.showcase-contacts .container .content p {
+  font-size: 14px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .showcase-contacts .container .content p {
+    font-size: 20px;
+  }
+}
+.showcase-contacts .container .content a {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 0px;
+}
+@media (min-width: 768px) {
+  .showcase-contacts .container .content a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+.showcase-contacts .container ul.breadcrumbs {
+  padding: 10px 16px;
+  list-style: none;
+}
+.showcase-contacts .container ul.breadcrumbs li {
+  display: inline;
+  font-size: 16px;
+}
+.showcase-contacts .container ul.breadcrumbs li a {
+  color: #191919;
+}
+.showcase-contacts .container ul.breadcrumbs li a:hover {
+  color: #6A6C71;
+  text-decoration: underline;
+}
+.showcase-contacts .container img {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (min-width: 1200px) {
+  .showcase-contacts .container img {
+    display: block;
+  }
+}
+
 .company-logos {
   display: flex;
   justify-content: space-between;
@@ -274,12 +374,26 @@ header .menu .mainmenu .btn-login {
 .company-logos .container a {
   margin-right: 0px;
 }
-.company-logos .container a img {
+.company-logos .container a img:hover {
+  animation: flash 1300ms infinite;
+}
+@keyframes flash {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.company-logos img {
   display: none;
   margin-right: 0px;
 }
 @media (min-width: 1200px) {
-  .company-logos .container a img {
+  .company-logos img {
     display: block;
   }
 }
@@ -292,6 +406,10 @@ header .menu .mainmenu .btn-login {
 }
 .features-box .section-title {
   padding-top: 0px;
+}
+.features-box .section-title .btn-ylw {
+  margin-top: 25px;
+  width: 100%;
 }
 @media (min-width: 1200px) {
   .features-box {
@@ -415,10 +533,16 @@ header .menu .mainmenu .btn-login {
   color: white;
 }
 
-.services-box {
+.services-box .wrapper {
   background-color: #F0EFE9;
   height: 870px;
   width: 100%;
+  position: relative;
+}
+.services-box .lines {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
 }
 .services-box .section-title {
   padding-top: 50px;
@@ -476,15 +600,15 @@ header .menu .mainmenu .btn-login {
   border-radius: 50%;
 }
 
-.why-us {
+.why-us .wrapper {
   position: relative;
 }
-.why-us .picture-left img {
+.why-us .wrapper .picture-left img {
   position: absolute;
   left: 60%;
   bottom: 12%;
 }
-.why-us .picture-left .box {
+.why-us .wrapper .picture-left .box {
   width: 55%;
   height: 60%;
   position: absolute;
@@ -689,23 +813,121 @@ header .menu .mainmenu .btn-login {
   padding-top: 15px;
 }
 
-.newsletter {
+.newsletter .wrapper {
   background-color: #F0EFE9;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 270px;
+  position: relative;
 }
-.newsletter .form label {
+.newsletter .wrapper .lines {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+.newsletter .wrapper .form label {
   font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 45px;
   font-weight: 700;
   padding-right: 50px;
 }
-.newsletter .form input {
+.newsletter .wrapper .form input {
   border-radius: 30px;
   outline: none;
   border: none;
   padding: 10px;
   margin-right: 20px;
+}
+
+footer section {
+  background-color: #0E1021;
+}
+footer section.btm-link {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  position: relative;
+}
+footer section.btm-link .lines {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+footer section.btm-link .logo img {
+  width: 66%;
+}
+footer section.btm-link .logo p {
+  color: white;
+}
+footer section.btm-link .container {
+  display: grid;
+  grid-template-areas: "grid-1 grid-2 grid-3 grid-4 grid-5";
+  -moz-column-gap: 112px;
+       column-gap: 112px;
+}
+footer section.btm-link .links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #84848a;
+}
+footer section.btm-link .links h2 {
+  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+footer section.btm-link .links a {
+  color: #84848a;
+  display: flex;
+  flex-direction: column;
+}
+footer section.btm-link .links .grid-1 {
+  grid-area: grid-1;
+}
+footer section.btm-link .links .grid-2 {
+  grid-area: grid-2;
+}
+footer section.btm-link .links .grid-3 {
+  grid-area: grid-3;
+}
+footer section.btm-link .links .grid-4 {
+  grid-area: grid-4;
+}
+footer section.btm-link .links .grid-5 {
+  grid-area: grid-5;
+}
+footer section.media-end {
+  padding: 15px 0;
+  border-top: rgba(207, 207, 207, 0.2078431373) 1px solid;
+}
+footer section.media-end .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer section.media-end .container .copyright {
+  color: rgba(255, 255, 255, 0.605);
+}
+footer section.media-end .container a {
+  padding-right: 10px;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+footer section.media-end .container a:hover {
+  color: #908c8c;
+}
+footer section.media-end .container a i:hover {
+  animation: flash 1300ms infinite;
+}
+@keyframes flash {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
