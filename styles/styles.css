@@ -17,6 +17,98 @@ html, body {
   grid-template-rows: auto 1fr auto;
 }
 
+.btn-ylw {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #f9d783;
+  border: 1px solid #f9d783;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, border 0.2s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out, border 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out, border 0.2s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
+}
+.btn-ylw i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-ylw:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+  text-decoration: underline;
+}
+
+.btn-transparent {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: transparent;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
+}
+.btn-transparent i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-transparent:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+  text-decoration: underline;
+}
+
+.btn-blk {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out;
+  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
+}
+.btn-blk i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-blk:hover {
+  background-color: white;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: underline;
+}
+
+.section-title {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+.section-title p {
+  color: #F94D1C;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 18px;
+  font-weight: 500;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 45px;
+  font-weight: 700;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -26,6 +118,12 @@ header .container {
   gap: 70px;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 680px) {
+  header .container {
+    gap: 160px;
+    justify-content: start;
+  }
 }
 header .container .menu-bars {
   font-size: 25px;
@@ -130,98 +228,6 @@ header .menu .mainmenu .btn-login {
   padding-bottom: 12px;
 }
 
-.btn-ylw {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: #f9d783;
-  border: 1px solid #f9d783;
-  color: #191919;
-  text-decoration: none;
-  padding: 15px 25px;
-  font-weight: 600;
-  border-radius: 25px;
-  font-size: 16px;
-  transition: background-color 0.3s ease-in-out, border 0.2s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
-  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out, border 0.2s ease-in-out;
-  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out, border 0.2s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
-}
-.btn-ylw i {
-  margin-left: 8px;
-  font-size: 0.9em;
-}
-.btn-ylw:hover {
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: #F0EFE9;
-  text-decoration: underline;
-}
-
-.btn-transparent {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: transparent;
-  border: 1px solid #191919;
-  color: #191919;
-  text-decoration: none;
-  padding: 15px 25px;
-  font-weight: 600;
-  border-radius: 25px;
-  font-size: 16px;
-  transition: background-color 0.3s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
-  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out;
-  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
-}
-.btn-transparent i {
-  margin-left: 8px;
-  font-size: 0.9em;
-}
-.btn-transparent:hover {
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: #F0EFE9;
-  text-decoration: underline;
-}
-
-.btn-blk {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: #191919;
-  border: 1px solid #191919;
-  color: white;
-  text-decoration: none;
-  padding: 15px 25px;
-  font-weight: 600;
-  border-radius: 25px;
-  font-size: 16px;
-  transition: background-color 0.3s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
-  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out;
-  transition: background-color 0.3s ease-in-out, text-decoration 0.25s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
-}
-.btn-blk i {
-  margin-left: 8px;
-  font-size: 0.9em;
-}
-.btn-blk:hover {
-  background-color: white;
-  border: 1px solid #191919;
-  color: #191919;
-  text-decoration: underline;
-}
-
-.section-title {
-  padding-top: 120px;
-  padding-bottom: 90px;
-}
-.section-title p {
-  color: #F94D1C;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 18px;
-  font-weight: 500;
-}
-.section-title h2 {
-  color: #191919;
-  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 45px;
-  font-weight: 700;
-}
-
 .showcase {
   background-color: #F0EFE9;
 }
@@ -235,10 +241,21 @@ header .menu .mainmenu .btn-login {
   padding-bottom: 80px;
   text-align: center;
 }
+@media (max-width: 680) {
+  .showcase .container .content {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .showcase .container .content h1 {
   font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 28px;
+}
+@media (max-width: 680) {
+  .showcase .container .content h1 {
+    font-size: 22px;
+  }
 }
 @media (min-width: 768px) {
   .showcase .container .content h1 {
@@ -271,89 +288,19 @@ header .menu .mainmenu .btn-login {
     margin-right: 10px;
   }
 }
+@media (max-width: 680px) {
+  .showcase .container .content a {
+    width: 45%;
+    margin-bottom: 50px;
+    padding: 35px;
+  }
+}
 .showcase .container img {
   display: none;
   margin-right: -50px;
 }
 @media (min-width: 1200px) {
   .showcase .container img {
-    display: block;
-  }
-}
-
-.showcase-contacts {
-  background-color: #F0EFE9;
-}
-.showcase-contacts .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.showcase-contacts .container .content {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  text-align: center;
-}
-.showcase-contacts .container .content h1 {
-  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-weight: 700;
-  font-size: 45px;
-}
-@media (min-width: 768px) {
-  .showcase-contacts .container .content h1 {
-    font-size: 70px;
-  }
-}
-@media (min-width: 1400px) {
-  .showcase-contacts .container .content h1 {
-    font-size: 85px;
-  }
-}
-.showcase-contacts .container .content p {
-  font-size: 14px;
-  padding-top: 35px;
-  padding-bottom: 50px;
-}
-@media (min-width: 768px) {
-  .showcase-contacts .container .content p {
-    font-size: 20px;
-  }
-}
-.showcase-contacts .container .content a {
-  display: block;
-  margin-bottom: 20px;
-  margin-right: 0px;
-}
-@media (min-width: 768px) {
-  .showcase-contacts .container .content a {
-    display: inline-block;
-    margin-right: 10px;
-  }
-}
-.showcase-contacts .container ul.breadcrumbs {
-  padding: 10px 16px;
-  list-style: none;
-}
-.showcase-contacts .container ul.breadcrumbs li {
-  display: inline;
-  font-size: 16px;
-}
-.showcase-contacts .container ul.breadcrumbs li a {
-  color: #191919;
-}
-.showcase-contacts .container ul.breadcrumbs li a:hover {
-  color: #6A6C71;
-  text-decoration: underline;
-}
-.showcase-contacts .container img {
-  display: none;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-@media (min-width: 1200px) {
-  .showcase-contacts .container img {
     display: block;
   }
 }
@@ -930,4 +877,148 @@ footer section.media-end .container a i:hover {
   100% {
     transform: scale(1);
   }
+}
+
+.showcase-contacts {
+  background-color: #F0EFE9;
+}
+.showcase-contacts .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.showcase-contacts .container .content {
+  padding-top: 80px;
+  text-align: center;
+}
+.showcase-contacts .container .content h1 {
+  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 700;
+  font-size: 45px;
+}
+@media (min-width: 768px) {
+  .showcase-contacts .container .content h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .showcase-contacts .container .content h1 {
+    font-size: 85px;
+  }
+}
+.showcase-contacts .container .content p {
+  font-size: 14px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .showcase-contacts .container .content p {
+    font-size: 20px;
+  }
+}
+.showcase-contacts .container .content a {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 0px;
+}
+@media (min-width: 768px) {
+  .showcase-contacts .container .content a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+.showcase-contacts .container ul.breadcrumbs {
+  padding: 10px 16px;
+  list-style: none;
+}
+.showcase-contacts .container ul.breadcrumbs li {
+  display: inline;
+  font-size: 16px;
+}
+.showcase-contacts .container ul.breadcrumbs li a {
+  color: #191919;
+}
+.showcase-contacts .container ul.breadcrumbs li a:hover {
+  color: #6A6C71;
+  text-decoration: underline;
+}
+.showcase-contacts .container img {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (min-width: 1200px) {
+  .showcase-contacts .container img {
+    display: block;
+  }
+}
+
+.call-boxes {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.call-boxes .box-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  justify-content: center;
+  gap: 15px;
+}
+.call-boxes .box-grid .boxes {
+  border: #908c8c 1px solid;
+  text-align: center;
+  padding: 30px;
+}
+.call-boxes .box-grid .boxes i {
+  font-size: 1.5rem;
+}
+.call-boxes .box-grid .boxes h2 {
+  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 700;
+  font-size: 22px;
+  color: #191919;
+}
+
+.contact-form {
+  padding-bottom: 120px;
+}
+.contact-form .wrapper {
+  width: 75%;
+  background-color: #F0EFE9;
+  padding: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form .wrapper form label {
+  font-family: "DM Sans", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 45px;
+  font-weight: 700;
+  color: #191919;
+  margin-bottom: 15px;
+}
+.contact-form .wrapper form input {
+  display: block;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.contact-form .wrapper form textarea {
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.contact-form .wrapper form .btn-ylw {
+  width: 100%;
 }
